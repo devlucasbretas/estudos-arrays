@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My.stok | Sistema de Estoque</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header com input de pesquiza ----------------------------------------------------------------------------------------------->
+    <header>
+        <h1>My.<span class="title-decor">stok</span> </h1>
+        <div>
+            <input type="text" placeholder="Ex. 01, 02 ,03" id="buscaInserida">
+            <button onclick="productConsult.Buscar()">Buscar por ID <i class="fas fa-search"></i></button>
+        </div>
+    </header>
+    <!------------------------------------------------------------------------------------------------------------------------------->
+    <main>
+        <!-- Section que contém o formulário de entrada de dados dos produtos ------------------------------------------------------->
+        <section class="register">
+            <div class="reg-form">
+                <h2>Cadastrar Produto no Estoque</h2>
+                <label for="produtoName">Nome do Produto: </label>
+                <input type="text" placeholder="Ex. mouse gamer" id="produtoName">
+
+                <label for="produtoId">ID de Busca: </label>
+                <input type="text" placeholder="Ex. 01, 02 ,03" id="produtoId">
+
+                <label for="produtoQtde">Quantidade: </label>
+                <input type="number" placeholder="0" id="produtoQtde">
+
+                <label for="produtoDescr">Descrição: </label>
+                <input type="text" placeholder="Ex. Mouse Gamer Razer" id="produtoDescr">
+                
+                <button type="submit" onclick="productRegister.Adicionar()"><i class="fas fa-plus-circle"></i> Cadastrar Item</button>
+
+            </div>
+
+        </section>
+        <!--------------------------------------------------------------------------------------------------------------------------->
+
+        <!-- Section que contém a tabeça com a lista de produtos cadastrados -------------------------------------------------------->
+        <section class="tabela-produtos">
+            <!-- div que contém o resultado da busca -------------------------------------------------------------------------------->
+            <div class="busca" id="busca">
+                <p id="busca-saida"></p>
+            </div>
+            <!----------------------------------------------------------------------------------------------------------------------->
+
+            <!-- div que contém a tabela de produtos cadastrados -------------------------------------------------------------------->
+            <div class="area-tabela">
+                <div class="title">
+                    <h2>Seu Estoque <i class="fas fa-boxes"></i></h2>
+                </div>
+                <table id="product-list" border="1px">
+                    <thead>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Quantidade</th>
+                            <th>Descrição</th>
+                            <th>ID</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                </table>
+            </div>
+            <!-- -------------------------------------------------------------------------------------------------------------------->
+        </section>
+        <!--------------------------------------------------------------------------------------------------------------------------->
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

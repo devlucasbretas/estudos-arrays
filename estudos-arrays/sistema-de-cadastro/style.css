@@ -1,0 +1,214 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(58, 58, 58);
+    font-family: 'Roboto', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    list-style: none;
+}
+
+/* Header ------------------------------------------------------------------------------------------------------------------------- */
+header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    padding: 0px 70px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(49, 49, 49);
+}
+
+header h1 {
+    color: rgb(226, 226, 226);
+    font-size: 30pt;
+}
+
+header button {
+    width: 180px;
+    height: 28px;
+    border-radius: 10px;
+    border: none;
+    color: rgb(34, 34, 34);
+    background-color: rgb(236, 236, 236);
+    cursor: pointer;
+}
+
+header input {
+    width: 150px;
+    padding: 10px;
+    height: 28px;
+    border-radius: 10px;
+    border: 1px solid rgb(81, 172, 81);
+    background-color: rgb(54, 54, 54);
+    color: white;
+}
+
+.title-decor {
+    color: rgb(81, 172, 81);
+}
+
+h1 {
+    font-family: 'Audiowide', cursive;
+    font-size: 8pt;
+}
+
+/* Section Register (onde os produtos serão cadastrados) -------------------------------------------------------------------------- */
+.register {
+    width: 440px;
+    height: 300px;
+    margin-top: 180px;
+    padding: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.reg-form {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 10px 50px;
+    margin-bottom: 60px;
+    background-color: rgb(51, 51, 51);
+    color: rgb(236, 236, 236);
+    border: 1px solid rgba(255, 255, 255, 0.534);
+}
+
+ h2{
+    font-size: 13pt;
+    text-rendering: optimizeLegibility;
+    font-weight: 500;
+}
+
+.reg-form input {
+    width: 240px;
+    margin-bottom: 20px;
+    height: 28px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(81, 172, 81);
+    background-color: rgb(54, 54, 54);
+    color: white;
+}
+
+input::placeholder {
+    font-style: italic;
+    color: rgb(133, 133, 133);
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+.reg-form button {
+    width: 240px;
+    margin-bottom: 20px;
+    height: 28px;
+    border-radius: 10px;
+    border: none;
+    color: rgb(34, 34, 34);
+    background-color: rgb(81, 172, 81);
+    cursor: pointer;
+}
+
+
+/* Main -------------------------------------------------------------------------------------------------------------------------*/
+
+main {
+    width: 100%;
+    padding: 0px 20px;
+    display: flex;
+}
+
+#product-list {
+    width:750px;
+    text-align: left;
+}
+
+.area-tabela {
+    margin-top: 30px;
+    overflow-y: auto; 
+    height: 600px;
+}
+
+.tabela-produtos {
+    width: 100%;
+    height: 400px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.title {
+    width: 100%;
+}
+
+.tabela-produtos h2{
+    text-align: left;
+    font-size: 13pt;
+    color: rgb(255, 255, 255);
+}
+
+table {
+    color: rgb(179, 179, 179);
+    border-color: rgb(228, 228, 228);
+    border-radius: 5px
+}
+
+th {
+    margin-left: 5px;
+    padding: 5px;
+    color: rgb(34, 34, 34);
+    background-color: rgb(236, 236, 236);
+}
+
+td {
+    margin-left: 5px;
+    padding: 5px;
+    color: rgb(175, 175, 175);
+    background-color: rgb(78, 78, 78);
+}
+
+a {
+    color: rgb(243, 66, 66);
+}
+
+/* janela que mostra o resultado da busca em uma linha de tabela ----------------------------------------------------------- */
+
+.busca {
+    margin-top: 30px;
+    color: white;
+}
+
+#busca-saida {
+    display: none;
+}
+
+.bg-busca {
+    background-color: rgb(81, 172, 81);
+    color: rgb(26, 26, 26);
+}
+
+.busca-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.busca-title button {
+    font-size: 17pt;
+    border: none;
+    width: 26px;
+    height: 30px;
+    background-color: transparent;
+    color: rgb(236, 236, 236);
+}
+
